@@ -1,0 +1,41 @@
+<!--顶部图标-->
+<navigator class="top" url="/pages/log/log">
+  <image src="/assets/images/top.png" />
+</navigator>
+<!--商城-公告-->
+<view class="notice">
+  <!--left-->
+  <view class="left">
+    <view >商城</view>
+    <image src="/assets/images/gonggao.png" />
+  </view>
+  <!--中间竖线-->
+  <view class="center">
+  </view>
+  <!--right-->
+  <view class="right">
+    <navigator class="firstRow" url="/pages/notice/notice">
+      <image src="/assets/images/gonggao_content.png"/>
+      <view>333333333333333333333333333333333333333</view>
+    </navigator>
+    <navigator class="secondRow" url="/pages/tongzhi/tongzhi">
+      <image src="/assets/images/tongzhi.png"/>
+      <view>333333333333333333333333333333333333333</view>
+    </navigator>
+  </view>
+</view>
+<!--店铺推荐图标-->
+<image class="tuijian" src="/assets/images/shop_recommendation.png"/>
+<!--店铺列表-->
+<view class="grid">
+  <navigator class="item" wx:for="{{categories}}" wx:key="id" url="/pages/item/item">
+    <image src="/assets/images/牛仔裤.png"/>
+    <view class="content">
+      <view style="margin-top:10rpx;margin-bottom:30rpx">{{item.title}}</view>
+      <view style="font-size:25rpx">地址:{{item.location}}</view>
+      <view style="font-size:25rpx">营业时间:{{item.openTime}}</view>
+    </view>
+  </navigator>
+</view>
+
+

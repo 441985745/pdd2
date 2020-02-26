@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/photo/photo",
+    "pages/mine/mine",
+    "pages/notice/notice",
+    "pages/tongzhi/tongzhi",
+    "pages/item/item"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "票朵朵",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "assets/icons/index.png",
+      "selectedIconPath": "assets/icons/index_active.png"
+    },
+    {
+      "pagePath": "pages/photo/photo",
+      "text": "拍照",
+      "iconPath": "assets/icons/photo.png",
+      "selectedIconPath": "assets/icons/photo_active.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "assets/icons/person.png",
+      "selectedIconPath": "assets/icons/person_active.png"
+    }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
