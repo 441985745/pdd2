@@ -39,5 +39,10 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  onShareAppMessage: function( options ){
+    　　return{
+      
+    }
+    }
 })

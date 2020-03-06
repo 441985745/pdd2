@@ -1,2 +1,14 @@
 <!--pages/item/item.wxml-->
-<text>pages/item/item.wxml</text>
+<view>
+
+</view>
+<view class="grid">
+  <navigator class="item" wx:for="{{categories}}" wx:key="id">
+
+    <view style="margin-top:10rpx;margin-bottom:30rpx">{{item.title}}</view>
+      
+    <image src="/assets/images/牛仔裤.png"/>
+    
+    
+  </navigator>
+</view>
