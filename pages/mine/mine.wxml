@@ -1,2 +1,23 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="info">
+  <view class="info-item1">
+    <image src="{{avatarUrl}}" class="avatar"></image>
+    {{nickName}}
+  </view>
+  <view class="info-item2">
+    <view>朵朵币:200</view>
+    <view>积分:0</view>
+  </view>
+</view>
+
+<view>
+
+</view>
+
+<view>
+
+</view>
+
+<view>
+
+</view>

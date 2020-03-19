@@ -1,2 +1,10 @@
 <!--pages/photo/photo.wxml-->
-<text>pages/photo/photo.wxml</text>
+<view class="total">
+  <view>请上传小票</view>
+  <view class="row">
+    <view class="item">
+      <image src="/assets/images/牛仔裤.png" mode="aspectFit"></image>
+    </view>
+    <view class="item">3</view>
+  </view>
+</view>

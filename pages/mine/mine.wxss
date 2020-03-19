@@ -1,1 +1,32 @@
 /* pages/mine/mine.wxss */
+page {
+  background-color: rgb(63, 108, 151);
+} 
+.avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.info{
+  display: flex;
+  background-color:#fff;
+  width:700rpx;
+  height:170rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  border-radius: 25rpx;
+  justify-content:space-between;
+  align-items:center;
+}
+.info .info-item1{
+  
+}
+.info .info-item1 image{
+  margin-left: 20rpx;
+}
+.info .info-item2{
+  
+}
+.info .info-item2 view{
+  margin-right: 20rpx;
+}

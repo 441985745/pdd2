@@ -5,14 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    "avatarUrl":"",
+    "nickName":""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    this.setData({
+      "avatarUrl":wx.getStorageSync('avatarUrl'),
+      "nickName":wx.getStorageSync('nickName')
+    })
   },
 
   /**

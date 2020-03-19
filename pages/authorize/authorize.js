@@ -7,6 +7,7 @@ Page({
     onLoad: function () {
         var that = this;
         //如果缓存中有openid,说明登录过,授权过
+        
         if(wx.getStorageSync('openId')){
             console.log(wx.getStorageSync('openId'))
             //从数据库查出用户信息并放入全局变量中
@@ -24,8 +25,8 @@ Page({
             console.log(res)
             // 发送 res.code 到后台换取 openId, sessionKey, unionId
             
-            app.globalData.openid="test"
-            console.log(app.globalData.openid)
+            //app.globalData.openid="test"
+            //console.log(app.globalData.openid)
             }
         })
         
@@ -36,6 +37,8 @@ Page({
             var that = this;
             //插入登录的用户的相关信息到数据库
             wx.setStorageSync('openId',app.globalData.openid)
+            wx.setStorageSync('nickName',e.detail.userInfo.nickName)
+            wx.setStorageSync('avatarUrl',e.detail.userInfo.avatarUrl)
             wx.request({
                 url: app.globalData.urlPath + 'user/add',
                 data: {
